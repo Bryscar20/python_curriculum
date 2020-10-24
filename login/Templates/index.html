@@ -6,24 +6,27 @@
         <link rel="stylesheet" id="styles"  href="{{ url_for('static', filename='css/index.css') }}" />
     </head>
     <body>
-        <div class="headline">
+        <div class="headline" style=" color: firebrick;
+        text-align: center;
+        font-weight: bolder;">
             <h1>PAGE HEADLINE</h1>
         </div>
-        <div class="wrapper">
+        <div class="wrapper" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(min-width, 800px 1fr)">
+            <h2>Test headline</h2>
             <div class="one">
-                <h2>Lorem Ipsum</h2>
+                <strong><h2 style="color: blueviolet">Lorem Ipsum</h2></strong>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
             </div>
             <div class="two">
-                <h2>Lorem Ipsum</h2>
+                <strong><h2 style="color: blueviolet">Lorem Ipsum</h2></strong>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
             </div>
             <div class="three">
-                <h2>Lorem Ipsum</h2>
+                <strong><h2 style="color: blueviolet">Lorem Ipsum</h2></strong>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
             </div>
             <div class="four">
-                <h2>Lorem Ipsum</h2>
+                <strong><h2 style="color: blueviolet">Lorem Ipsum</h2></strong>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
             </div>
         </div>
