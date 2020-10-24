@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Profile Page</title>
+        <link rel="stylesheet" id="styles"  href="{{ url_for('static', filename='css/profile.css') }}" />
+    </head>
+    <body>
+        <div>
+            <div class="welcome">
+                <div>
+                    <label>name:</label>
+                    <input type="text" ng-model="yourName" placeholder="Enter a name here">
+                    <hr>
+                    <h1>Hello {{yourName}}! Welcome to your profile page</h1>
+                </div>
+            <div class="one" style="float: left">
+                <h2>SQUARE ONE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium vel natus voluptates? Iure id architecto minima quas consequuntur accusamus cumque perspiciatis soluta nam deleniti! Voluptate numquam et dolor vitae at?</p>
+            </div>
+            <div class="two" style="float: right;">
+                <h2>SQUARE TWO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero dignissimos tempore adipisci. Quia ex fuga cupiditate est repellat soluta, blanditiis culpa facilis, at ea incidunt, earum quod magni quos deserunt?</p>
+            </div>
+            <div class="three">
+                <h2>SQUARE THREE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur facere voluptates rerum numquam porro cum eveniet expedita iure aut nostrum molestias soluta, accusantium architecto laudantium sunt at dignissimos error.</p>
+            </div>
+            <div class="four">
+                <h2>SQUARE FOUR</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, earum fugiat eum quisquam illum fuga, libero inventore dolorem repellat pariatur maxime dolor, eveniet accusamus rem! Voluptates aperiam error voluptate natus!</p>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

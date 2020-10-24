@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>WELCOME!</title>
+        <link rel="stylesheet" id="styles"  href="{{ url_for('static', filename='css/login.css') }}" />
+    </head>
+    <body>
+        <div class="login">
+            <h1>You must log in to continue</h1>
+            <h1>Login</h1>
+            <form method="post">
+                <input type="text" name="username" placeholder="Username" required="required" />
+                <input type="password" name="password" placeholder="Password" required="required" />
+                <input type="checkbox" id="consent" name="consent" value="age" required="required">
+                <label for="consent"> I warrant that I am above 18yrs old</label>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+            </form>
+        </div>
+    </body>
+</html>

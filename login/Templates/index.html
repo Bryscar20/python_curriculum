@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dummy welcome page</title>
+        <link rel="stylesheet" id="styles"  href="{{ url_for('static', filename='css/index.css') }}" />
+    </head>
+    <body>
+        <div class="headline">
+            <h1>PAGE HEADLINE</h1>
+        </div>
+        <section class="content">
+            <div class="capture_phrase_one">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
+            </div>
+            <div class="capture_phrase_two">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis error iure sed a veniam animi tempore? Nobis ea cum veritatis omnis, eos nihil! Eligendi reprehenderit recusandae corporis suscipit cum dolor.</p>
+            </div>
+            <div class="capture_phrase_three">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
+            </div>
+            <div class="capture_phrase_four">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
+            </div>
+            <form action="{{ url_for('login', filename='login.html') }}">
+                <button type="submit"><h1>CLICK HERE</h1>To LogIn</button>
+             </form>
+        </section>
+    </body>
+</html>
