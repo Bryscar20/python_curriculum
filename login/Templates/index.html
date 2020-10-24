@@ -1,41 +1,80 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Dummy welcome page</title>
-        <link rel="stylesheet" id="styles"  href="{{ url_for('static', filename='css/index.css') }}" />
-    </head>
-    <body>
-        <div class="headline" style=" color: firebrick;
+
+<head>
+    <title>Dummy welcome page</title>
+    <link rel="stylesheet" id="styles" href="{{ url_for('static', filename='css/index.css') }}" />
+</head>
+
+<body>
+    <div class="headline" style="display: grid; color: firebrick;grid-template-columns: 1fr span;grid-template-rows: auto;
         text-align: center;
         font-weight: bolder;">
-            <h1>PAGE HEADLINE</h1>
-            <h2>Test Headline</h2>
+        <img src="{{ url_for('static', filename='img/1.png') }}" alt="Logo" width="100px" height="100px">
+        <h1>Dummy Weblog</h1>
+        <h2>Test Headline</h2>
+    </div>
+    <div class="wrapper"
+        style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: repeat(min-width, 800px 1fr); margin: 5px 20px 20px 20px;">
+        <div class="one">
+            <strong>
+                <h2 style="color: blueviolet">Lorem Ipsum</h2>
+            </strong>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores
+                itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!
+            </p>
         </div>
-        <div class="wrapper" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(min-width, 800px 1fr); margin: 5px 20px 20px 20px;">
-            <div class="one">
-                <strong><h2 style="color: blueviolet">Lorem Ipsum</h2></strong>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
-            </div>
-            <div class="two">
-                <strong><h2 style="color: blueviolet">Lorem Ipsum</h2></strong>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
-            </div>
-            <div class="three">
-                <strong><h2 style="color: blueviolet">Lorem Ipsum</h2></strong>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
-            </div>
-            <div class="four">
-                <strong><h2 style="color: blueviolet">Lorem Ipsum</h2></strong>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!</p>
-            </div>
+        <div class="two">
+            <strong>
+                <h2 style="color: blueviolet">Lorem Ipsum</h2>
+            </strong>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores
+                itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!
+            </p>
         </div>
-        <div class="button" style="display: grid">
-            <div>
-                <form action="{{ url_for('login', filename='login.html') }}">
-                    <button type="submit"><h1>CLICK HERE</h1>To LogIn</button>
-                </form>
-            </div>
+        <div class="three">
+            <strong>
+                <h2 style="color: blueviolet">Lorem Ipsum</h2>
+            </strong>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores
+                itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!
+            </p>
         </div>
-    </body>
+        <div class="four">
+            <strong>
+                <h2 style="color: blueviolet">Lorem Ipsum</h2>
+            </strong>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores
+                itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!
+            </p>
+        </div>
+        <div class="five">
+            <strong>
+                <h2 style="color: blueviolet">Lorem Ipsum</h2>
+            </strong>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores
+                itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!
+            </p>
+        </div>
+        <div class="six">
+            <strong>
+                <h2 style="color: blueviolet">Lorem Ipsum</h2>
+            </strong>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea eos eaque voluptatem nostrum, dolores
+                itaque ipsam ex earum ab sapiente suscipit recusandae minus magni dolor doloremque ad repellendus in!
+            </p>
+        </div>
+    </div>
+    <div class="button" style="display: grid">
+        <div>
+            <form action="{{ url_for('login', filename='login.html') }}">
+                <button type="submit">
+                    <h1>CLICK HERE</h1>To LogIn
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
 </html>
